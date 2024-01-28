@@ -144,7 +144,6 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
         frame.origin.y = (padding * (i+1)) + (thickness * i);
         lineView.frame = frame;
     }
-    #endif
     
     //grid lines - vertical
     numberOfLines = self.verticalGridLines.count;
@@ -157,6 +156,7 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
         frame.origin.x = (padding * (i+1)) + (thickness * i);
         lineView.frame = frame;
     }
+    #endif
 }
 
 - (void)setGridHidden:(BOOL)hidden animated:(BOOL)animated
